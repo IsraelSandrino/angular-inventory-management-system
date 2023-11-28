@@ -1,0 +1,37 @@
+<div>
+  <nz-table #basicTable [nzBordered]="true" [nzData]="data">
+    <!-- table-header -->
+    <thead>
+      <tr class="table__header-columns">
+        <th *ngFor="let column of displayedColumns">{{ column }}</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <!-- table-body -->
+    <tbody>
+      <tr *ngFor="let row of data">
+        <!-- data column render -->
+        <td *ngFor="let column of displayedColumns" >{{ row[columnMapping[column]] }}</td>
+
+        <!-- actions column -->
+        <td class="table__actions-column">
+          <div>
+            <a href="">
+              <span nz-icon nzType="edit" nzTheme="outline"></span>
+            </a>
+          </div>
+          <div>
+            <a class="table__actions-icon" href="">
+              <span nz-icon nzType="eye" nzTheme="outline"></span>
+            </a>
+          </div>
+          <div>
+            <a class="table__actions-icon" href="">
+              <span nz-icon nzType="delete" nzTheme="outline"></span>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

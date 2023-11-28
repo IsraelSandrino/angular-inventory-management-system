@@ -1,0 +1,11 @@
+.toolbar__content {
+  display: flex;
+}
+
+.toolbar__search-bar {
+  width: 100%;
+}
+
+.toolbar__add-button, .toolbar__export-button {
+  margin-left: 1rem;
+}

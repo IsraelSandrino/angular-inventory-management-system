@@ -1,0 +1,11 @@
+.table__header-columns > th {
+  font-weight: bold;
+}
+
+.table__actions-column {
+  display: flex;
+}
+
+.table__actions-icon {
+  margin-left: 1rem;
+}

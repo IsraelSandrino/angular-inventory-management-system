@@ -1,1 +1,44 @@
-<p>products works!</p>
+<div>
+  <nz-tabset>
+    <!-- products -->
+    <nz-tab nzTitle="Produtos">
+      <!-- toolbar -->
+      <div>
+        <app-toolbar
+          [nameButton]="'Adicionar Produto'"
+        ></app-toolbar>
+      </div>
+      <!-- table -->
+      <div class="products__products-table">
+        <app-table
+          [displayedColumns]="['Nome', 'Código Barras', 'Fabricante', 'Marca' , 'Categoria', 'Preço Compra (Unidade)']"
+          [columnMapping]="columnMapping"
+          [data]="listOfData"
+        ></app-table>
+      </div>
+    </nz-tab>
+
+    <!-- supplier -->
+    <nz-tab nzTitle="Fornecedor">
+      <div>
+        <app-toolbar></app-toolbar>
+      </div>
+      <!-- content -->
+      <div>
+
+      </div>
+    </nz-tab>
+
+    <!-- categories -->
+    <nz-tab nzTitle="Categorias">
+      <div>
+        <app-toolbar></app-toolbar>
+      </div>
+      <!-- content -->
+      <div>
+
+      </div>
+    </nz-tab>
+  </nz-tabset>
+
+</div>

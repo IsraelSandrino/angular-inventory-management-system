@@ -1,0 +1,25 @@
+<div class="toolbar__content">
+  <!-- search-bar -->
+  <div class="toolbar__search-bar">
+    <nz-input-group [nzSuffix]="suffixIconSearch">
+      <input type="text" nz-input placeholder="Pesquisar" />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+  </div>
+  <!-- add-button -->
+  <div class="toolbar__add-button">
+    <button nz-button nzType="primary" [nzSize]="size">
+      <span nz-icon nzType="plus"></span>
+      {{ nameButton }}
+    </button>
+  </div>
+  <!-- export-button -->
+  <div class="toolbar__export-button">
+    <button nz-button nzType="primary" [nzSize]="size">
+      <span nz-icon nzType="export"></span>
+      Exportar
+    </button>
+  </div>
+</div>
